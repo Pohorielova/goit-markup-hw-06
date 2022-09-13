@@ -8,6 +8,7 @@
   --clear-black-color: #000000;
   --primary-dark-color: #2f303a;
   --transparent-white-color: rgba(255, 255, 255, 0.6);
+  --transparent-grey-color: rgba(255, 255, 255, 0.3);
   --border-white-color: #ececec;
   --border-whitelight-color: #eeeeee;
   --shadow-one-color: rgba(0, 0, 0, 0.12);
@@ -566,6 +567,7 @@ p {
 }
 .footer-box {
   display: flex;
+  align-items: center;
   padding-top: 65px;
   padding-bottom: 65px;
 }
@@ -635,10 +637,34 @@ p {
 .footer.social-icon {
   fill: currentColor;
 }
+/* Follow-us form */
+.form {
+  display: flex;
+}
+
+.subscription {
+  margin-left: 93px;
+}
+
+.form-input {
+  min-width: 358px;
+  max-height: 50px;
+  padding: 15px 16px 15px;
+  background-color: transparent;
+  font: inherit;
+  border: 1px solid var(--transparent-grey-color);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--transparent-white-color);
+}
+.btn-send .social-icon {
+  margin-left: 10px;
+}
 
 /* Buttons */
-
-.button-hero {
+.button {
   color: var(--clear-white-color);
   background-color: var(--accent-color);
   border: none;
@@ -653,10 +679,17 @@ p {
 
   display: inline-block;
   border-radius: 4px;
-  padding: 10px 39px 10px 25px;
+  padding: 10px 32px;
   min-width: 216px;
 }
-.button-hero:active {
+.btn-send {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 28px;
+  min-width: 200px;
+  margin-left: 10px;
+}
+.button:active {
   background-color: var(--secondary-white-color);
   color: var(--accent-color);
 }
