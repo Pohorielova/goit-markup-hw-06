@@ -879,10 +879,9 @@ p {
   border: 0;
   clip: rect(0 0 0 0);
 }
-/* не знаходить іконку в спрайті, ящо поза спрайтом -все працює, хєлп */
+
 .form-checkbox:checked + .icon-check {
-  background-image: url("../images/icons.svg#icon-checked");
-  /* background-image: url("../images/icon\ check.svg"); */
+  background-image: url("../images/icon\ check.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--accent-color);
